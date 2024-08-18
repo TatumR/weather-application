@@ -1,6 +1,14 @@
 body {
-  background: #f9f7fe;
+  
   font-family: "Roboto", sans-serif;
+}
+
+.gradient {
+  background: #2980B9;
+  background: linear-gradient(
+    to right,
+    #2980B9,#6DD5FA,#FFFFFF
+  );
 }
 
 a {
