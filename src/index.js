@@ -1,3 +1,22 @@
+function updateBackground(description) {
+  const body = document.querySelector("body");
+
+  if (description.includes("clear")) {
+    body.className = "clear-sky";
+  } else if (description.includes("cloud")) {
+    body.className = "cloudy";
+  } else if (description.includes("rain")) {
+    body.className = "rainy";
+  } else if (description.includes("snow")) {
+    body.className = "snowy";
+  } else {
+    body.className = "default-weather"; 
+  }
+}
+
+
+
+
 function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
@@ -16,6 +35,9 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
+
+
+updateBackground(response.data.condition.description.toLowerCase());
 }
 
 function formatDate(date) {
