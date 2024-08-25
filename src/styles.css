@@ -3,13 +3,26 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.gradient {
-  background: #2980B9;
-  background: linear-gradient(
-    to right,
-    #2980B9,#6DD5FA,#FFFFFF
-  );
+body.clear-sky {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
 }
+
+body.cloudy {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+body.rainy {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+body.snowy {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+body.default-weather {
+  background: linear-gradient(to right, #2980B9, #6DD5FA, #FFFFFF);
+}
+
 
 a {
   color: #885df1;
