@@ -3,8 +3,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-body.sunny-sky {
-  background: url('images/sunnysky.jpg') no-repeat center center fixed;
+body.clear-sky {
+  background: url('images/clearsky.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
