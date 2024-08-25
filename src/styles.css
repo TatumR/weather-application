@@ -3,24 +3,26 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-body.clear-sky {
-  background: linear-gradient(to right, #00c6ff, #0072ff);
+body.sunny-sky {
+  background: url('images/sunnysky.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 body.cloudy {
-  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  background: url('images/cloudysky.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 body.rainy {
-  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  background: url('images/rainysky.jpg') no-repeat center center fixed;
+  background-size: cover;
+  animation: rainAnimation 2s linear infinite;
 }
 
 body.snowy {
-  background: linear-gradient(to right, #e0eafc, #cfdef3);
-}
-
-body.default-weather {
-  background: linear-gradient(to right, #2980B9, #6DD5FA, #FFFFFF);
+  background: url('images/snowylandscape.jpg') no-repeat center center fixed;
+  background-size: cover;
+  animation: snowAnimation 4s linear infinite;
 }
 
 
