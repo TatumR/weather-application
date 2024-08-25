@@ -14,13 +14,13 @@ body.cloudy {
 }
 
 body.rainy {
-  background: url('images/rainysky.jpg') no-repeat center center fixed;
+  background: url('images/rain.jpg') no-repeat center center fixed;
   background-size: cover;
   animation: rainAnimation 2s linear infinite;
 }
 
 body.snowy {
-  background: url('images/snowylandscape.jpg') no-repeat center center fixed;
+  background: url('images/snowysky.jpg') no-repeat center center fixed;
   background-size: cover;
   animation: snowAnimation 4s linear infinite;
 }
